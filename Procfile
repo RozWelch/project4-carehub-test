@@ -1,1 +1,1 @@
-web: guincorn carehub.wsgi
+web: gunicorn carehub.wsgi
