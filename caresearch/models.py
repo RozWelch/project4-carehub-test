@@ -36,6 +36,7 @@ class Careprovider(models.Model):
     email_address = models.CharField(max_length=50)
     has_disabled_space = models.BooleanField() 
     careprovider_image = CloudinaryField('image', default='placeholder')
+    
 
 class Rating(models.Model):
     ratings_id = models.ForeignKey(Careprovider, on_delete=models.CASCADE, related_name='ratings')
